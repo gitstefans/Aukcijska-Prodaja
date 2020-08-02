@@ -1,0 +1,13 @@
+﻿<Application x:Class="auapp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:auapp"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate x:Key="productTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="{Binding Path=ProductName}"></Label>
+            </StackPanel>
+        </DataTemplate>
+    </Application.Resources>
+</Application>

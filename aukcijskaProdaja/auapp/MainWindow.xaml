@@ -1,0 +1,48 @@
+﻿<Window x:Class="auapp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:auapp"
+        
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Login" Name="btnLogin" HorizontalAlignment="Left" Margin="32,10,0,0" VerticalAlignment="Top" Width="75" Click="btnLgn" />
+        <Button Content="Register" Name="btnRegister" HorizontalAlignment="Left" Margin="130,10,0,0" VerticalAlignment="Top" Width="75" Click="btnReg" />
+        <StackPanel HorizontalAlignment="Left" Height="269" Margin="32,66,0,0" VerticalAlignment="Top" Width="153">
+            <Label Content="Item"/>
+            <TextBox x:Name="prName" Text="{Binding CurrentProduct.ProductName}" Height="23" TextWrapping="Wrap" />
+            <Label Content="Price"/>
+            <TextBox x:Name="PriceTextBox" Height="23" TextWrapping="Wrap" Text="{Binding CurrentProduct.ProductPrice}"/>
+            <Label Content="Last Bid"/>
+            <TextBox x:Name="lastBidBox" Height="23" TextWrapping="Wrap" Text="{Binding CurrentProduct.LastBid}"/>
+            <Label Content="Last Bidder"/>
+            <TextBox x:Name="lastBidderBox" Height="23" TextWrapping="Wrap" Text="{Binding CurrentProduct.LastBidder}"/>
+            <Label Content="ProductID" Height="24" />
+            <TextBox Height="24" x:Name="prIDBox"  Text="{Binding CurrentProduct.ProductID}"/>
+
+
+        </StackPanel>
+        <ListBox Name="ListBox1" ItemsSource="{Binding ProductList}" SelectedItem="{Binding CurrentProduct}" HorizontalAlignment="Left" Height="168" Margin="512,94,0,0" VerticalAlignment="Top" Width="220">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="{Binding Path=ProductName}"></Label>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Label Content="Products" HorizontalAlignment="Left" Margin="520,66,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button x:Name="newBtn" Content="New Item" HorizontalAlignment="Left" Margin="512,287,0,0" VerticalAlignment="Top" Width="75" Click="btnNew" />
+        <Button x:Name="dlBtn" Content="Delete Item" Command="{Binding DeleteCommand}" HorizontalAlignment="Left" Margin="657,287,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="startauctionbtn" Content="Start Auction" Click="auctionbtn"  HorizontalAlignment="Left" Margin="348,94,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Name="timerlbl" FontSize="14" Width="75" Content="Timer" HorizontalContentAlignment="Center" Height="25" HorizontalAlignment="Left" Margin="348,160,0,0" VerticalAlignment="Top"/>
+        <Label Content="Seconds left:" HorizontalAlignment="Left" Margin="348,129,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.684,1.288" Width="75"/>
+        <Label  x:Name="userLabel" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"  HorizontalAlignment="Left"  FontSize="14" Background="LightGray"  Margin="657,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.118,0.404" Width="75" Height="38" />
+        <Button Content="Bid" x:Name="bidBtn" HorizontalAlignment="Left" Margin="348,204,0,0" VerticalAlignment="Top" Width="75" Click="bidBtn_Click"/>
+        <Button Content="Logout" x:Name="buttonLogout" Click="btnLogout" HorizontalAlignment="Left" Margin="512,10,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+
+</Window>

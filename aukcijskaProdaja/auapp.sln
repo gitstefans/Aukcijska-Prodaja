@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2047
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "auapp", "auapp\auapp.csproj", "{C1DEE164-B9EE-4B8F-A991-CE93C3C453D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelClass", "ModelClass\ModelClass.csproj", "{778EB166-6F6E-4979-99DD-025E7EB6949A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainWindowVM", "MainWindowVM\MainWindowVM.csproj", "{551E98A6-D22A-498D-866E-F5E3ED29B317}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1DEE164-B9EE-4B8F-A991-CE93C3C453D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1DEE164-B9EE-4B8F-A991-CE93C3C453D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1DEE164-B9EE-4B8F-A991-CE93C3C453D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1DEE164-B9EE-4B8F-A991-CE93C3C453D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{778EB166-6F6E-4979-99DD-025E7EB6949A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{778EB166-6F6E-4979-99DD-025E7EB6949A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{778EB166-6F6E-4979-99DD-025E7EB6949A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{778EB166-6F6E-4979-99DD-025E7EB6949A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{551E98A6-D22A-498D-866E-F5E3ED29B317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{551E98A6-D22A-498D-866E-F5E3ED29B317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{551E98A6-D22A-498D-866E-F5E3ED29B317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{551E98A6-D22A-498D-866E-F5E3ED29B317}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {305F65A2-5E42-4926-8242-D00C6B0599DC}
+	EndGlobalSection
+EndGlobal
